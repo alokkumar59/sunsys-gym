@@ -1,0 +1,133 @@
+.enquiryPage {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 150px 0 100px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+  
+  .header span { color: #FFD700; }
+  
+  .header p {
+    color: #888;
+    font-size: 1.1rem;
+  }
+  
+  /* --- Form Layout --- */
+  .enquiryForm {
+    background: #111;
+    padding: 40px;
+    border: 1px solid #222;
+    border-radius: 12px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inputBox label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #FFD700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+  }
+  
+  .inputBox input, .inputBox select, .textAreaBox textarea {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 15px;
+    color: #fff;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .inputBox input:focus, .inputBox select:focus {
+    border-color: #FFD700;
+  }
+  
+  .textAreaBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .textAreaBox label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #FFD700;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    padding: 20px;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    font-weight: 900;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .submitBtn:hover {
+    background: #fff;
+    transform: scale(1.02);
+  }
+  
+  /* --- Success State --- */
+  .successWrapper {
+    text-align: center;
+    padding: 200px 20px;
+  }
+  
+  .successIcon {
+    font-size: 5rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+  }
+  
+  .backBtn {
+    margin-top: 20px;
+    background: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* --- Responsive --- */
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    .enquiryForm { padding: 25px; }
+  }

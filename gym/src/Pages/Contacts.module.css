@@ -1,0 +1,142 @@
+.contactPage {
+    background-color: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 120px 0 80px; /* Space for navbar */
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+  }
+  
+  .contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  /* --- Left Side --- */
+  .title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+  
+  .title span { color: #FFD700; }
+  
+  .subtitle {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 450px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .infoCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    color: #FFD700;
+    font-size: 1.5rem;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  .infoCard h4 {
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .infoCard p {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  /* --- Form Side --- */
+  .contactForm {
+    background: #121212;
+    padding: 50px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup input, 
+  .inputGroup select, 
+  .inputGroup textarea {
+    width: 100%;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    font-family: inherit;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .inputGroup input:focus, 
+  .inputGroup select:focus, 
+  .inputGroup textarea:focus {
+    border-color: #FFD700;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    padding: 18px;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+  }
+  
+  .submitBtn:hover {
+    background: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* --- Responsive --- */
+  @media (max-width: 992px) {
+    .contactWrapper {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .subtitle { margin: 0 auto 40px; }
+    
+    .details { align-items: center; }
+    
+    .infoCard { flex-direction: column; gap: 10px; }
+    
+    .contactForm { padding: 30px 20px; }
+  }
